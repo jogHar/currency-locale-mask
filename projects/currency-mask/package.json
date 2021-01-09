@@ -1,0 +1,23 @@
+{
+  "name": "currency-locale-mask",
+  "version": "0.0.1",
+  "author": {
+    "email": "joganihardik57@gmail.com",
+    "name": "Hardik Jogani",
+    "url": "https://joghar.github.io"
+  },
+  "bugs": {
+    "email": "joganihardik57@gmail.com",
+    "url": "https://github.com/jogHar/currency-locale-mask/issues"
+  },
+  "description": "This library use for currency masking with locale in angular.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jogHar/currency-locale-mask.git"
+  },
+  "homepage": "https://github.com/jogHar/currency-locale-mask",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3"
+  }
+}

@@ -1,0 +1,11 @@
+<form [formGroup]="currencyForm">
+    <label>US</label>
+    <input ngCurrencyMask code="USD" locale="en-US" formControlName="currencyEN">
+    <br><br>
+    <label>DE</label>
+    <input ngCurrencyMask code="USD" locale="de-DE" formControlName="currencyDE">
+</form>
+
+<pre>
+{{ currencyForm.value | json}}
+</pre>
