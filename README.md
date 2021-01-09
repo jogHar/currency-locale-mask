@@ -9,7 +9,7 @@ This library use for currency masking with locale in angular.
 ``` terminal
 npm install currency-locale-mask
 ```
-2.  Import **LocaleCurrencyMaskModule** in module. 
+2.  Import **CurrencyMaskModule** in module. 
 3.  Below field use in HTML
   - ngCurrencyMask - selector
   - code - ex. 'USD', 'EUR'
