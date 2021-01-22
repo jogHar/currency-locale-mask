@@ -34,6 +34,7 @@ export class CurrencyMaskDirective implements OnInit{
    @HostListener('keydown', ['$event']) onKeydown(e) {
     const keyCode = Number(e.keyCode);
     if (keyCode === 8) {
+	  e.preventDefault();
       const number = this.el.nativeElement.value.replace(/\D/g, '');
       this.format(number.substring(0, number.length - 1));
     }
@@ -41,9 +42,8 @@ export class CurrencyMaskDirective implements OnInit{
 
   format(val: string) {
     const thenum = val.replace(/\D/g, '');
-    const newValue = this.el.nativeElement.value.replace(/\D/g, '');
     const formatted = this.currencyPipe.transform(thenum, this.code, true, '1.0-0', this.locale);
-    this.ngControl.control.setValue(newValue, {
+    this.ngControl.control.setValue(thenum, {
       emitEvent: false,
       emitModelToViewChange: false,
       emitViewToModelChange: false
